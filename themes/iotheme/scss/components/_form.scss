@@ -1,0 +1,33 @@
+#block-contactblock {
+    border: none;
+    & h2 {
+        color: white;
+        font-size: 32px;
+    }
+    .content {
+        & label {
+            display: none;
+        }
+        & input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 0px;
+        }
+        & textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 0px;
+        }
+        #edit-submit {
+            width: 100%;
+            padding: 10px;
+            border-radius: 0px;
+            background: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        #edit-preview {
+            display: none;
+        }
+    }
+}

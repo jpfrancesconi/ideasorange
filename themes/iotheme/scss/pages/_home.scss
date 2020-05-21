@@ -1,0 +1,112 @@
+body.path-frontpage {
+    background-color: $main-background-color;
+    color: $font-color;
+    .header {
+        position: absolute;
+    }
+
+    /*.region.region-content {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 0.5s all ease-in-out;
+    }
+    .region.region-content.appear {
+        opacity: 1;
+        transform: translateY(0px);
+    }*/
+    /* BEGIN - Generic Styles for blocks on front page */
+    .views-element-container.block.block-views {
+        height: 100vh;
+        background-color: transparent;
+        .homepage-block {
+            padding-top: 25px;
+        }
+
+        .title{
+            position: relative;
+            font-size: $fp_block_title_font_size;
+            font-weight: $fp_block_title_font_weight;
+            .subtitle {
+                font-size: $fp_block_subtitle_font_size;
+                font-weight: $fp_block_subtitle_font_weight;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 10%;
+                background-color: $orange-color;
+                height: 4px;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    /* END - Generic Styles for blocks on front page */
+    /* BEGIN - Specific Styles for blocks on front page */
+    /* BEGIN - Services Block */
+    /* END - Services Block */
+
+    /* BEGIN - Partnerts Block */
+    #block-views-block-partners-block-1 {
+        .view-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            grid-gap: 15px;
+            margin: 0 auto;
+            .views-row {
+                width: 200px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: white;
+                text-align: center;
+                border: solid 1px #ccc;
+                box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.45);
+                transition: all 0.5s ease;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(0.8);
+                }
+                & a{
+                    border-bottom: none;
+                }
+            }
+        }
+
+    }
+    /* END - Partnerts Block */
+
+    /* BEGIN - Case Studies Block */
+    #block-views-block-case-studies-slide-block-1 {
+        .views-row {
+            /*display: flex;
+            justify-content: center;*/
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 15px;
+            justify-items: center;
+            align-content: center;
+            padding: 15px;
+        }
+        .project-details {
+            padding-left: 15px;
+            .views-field.views-field-title a{
+                color: black;
+                border-bottom: none;
+                font-size: 42px;
+            }
+        }
+        .project-image {
+            /*background-color: red;*/
+            & img {
+                width: 400px;
+                height: 300px;
+            }
+        }
+    }
+    /* END - Case Studies Block */
+    /* END - Specific Styles for blocks on front page */
+}

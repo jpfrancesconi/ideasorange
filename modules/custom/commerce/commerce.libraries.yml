@@ -1,0 +1,4 @@
+commerce:
+  js:
+    #js/dist/main.js: {}
+    js/mercadopago.js: {}

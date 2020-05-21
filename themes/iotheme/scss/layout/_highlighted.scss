@@ -1,0 +1,59 @@
+.highlighted {
+    .layout-container.section.clearfix {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+    }
+
+    .region.region-highlighted {
+        margin: 0 auto;
+        width: 100vw;
+    }
+
+    .content {
+        margin-top: 0;
+        position: relative;
+
+        .container_hero_banner {
+            position: absolute;
+            right: 10%;
+            bottom: 40%;
+            color: $orange-color;
+            & h1{
+                color: $orange-color;
+                font-size: 50px;
+                margin-bottom: 0;
+            }
+            & a{
+                font-size: 32px;
+                font-weight: 200;
+                text-decoration: none;
+                color: $orange-color;
+                border-bottom: none;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $orange-color;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 250ms ease-in;
+                }
+                &:hover::after {
+                    /*cursor: pointer;*/
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+            }
+        }
+    }
+
+    /* Hide block title */
+    #block-hero h2{
+        display: none;
+    }
+}

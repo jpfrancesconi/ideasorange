@@ -1,0 +1,106 @@
+.header {
+    position: $page_position; /*absolute;*/
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    .region-header {
+        padding: 0;
+    }
+    .clearfix.region.region-header {
+        &:after {
+            content: none;
+        }
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        align-items: center;
+
+        #block-burguermenubutton {
+            margin: 0;
+        }
+        .burger {
+            display: inline-block;
+            position: fixed;
+            right: 50px;
+            cursor: pointer;
+            z-index: 999;
+
+            & div {
+                background-color: $orange-color;
+                width: 25px;
+                height: 3px;
+                margin: 5px;
+                transition: all 0.3s ease;
+            }
+            &.toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            &.toggle .line2 {
+                opacity: 0;
+            }
+            &.toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+
+        .block.block-menu.navigation {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            width: 550px;
+            padding: 10px;
+            margin-left: auto;
+            position: fixed;
+            right: 50px;
+            &.open {
+                display: flex;
+            }
+            .clearfix.menu {
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
+
+                .menu-item {
+                    border: none; 
+                    padding: 10px;
+                    background-color: rgba($color: #fff, $alpha: 0.59);
+                    &:first-child{
+                        /*border-radius: 5px 0px 0px 5px;*/
+                    }
+                    &:last-child{
+                        /*border-radius: 0px 5px 5px 0px;*/
+                    }
+                    a {
+                        color: $orange-color;
+                        border: none;
+                        font-size: 18px;
+                        font-family: 'Economica', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Hide brand logo */
+    #block-iotheme-branding {
+        display: block;
+
+        .site-branding__logo img {
+            width: 80px;
+        }
+
+        .site-branding__name a {
+            text-decoration: none;
+            font-family: 'Economica', sans-serif;
+            color: $orange-color;
+        }
+        .site-branding__slogan {
+            color: white;
+        }
+    }
+
+    
+}
