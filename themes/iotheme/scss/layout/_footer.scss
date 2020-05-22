@@ -1,5 +1,6 @@
 .site-footer{
     background-color: #1b1919;
+    font-family: 'Oswald', sans-serif;
     .site-footer__top.clearfix {
         display: grid;
         grid-template-columns: 30% 70%;
@@ -33,6 +34,7 @@
                 vertical-align: initial;
                 border: none;
                 & h2 {
+                    font-family: 'Oswald', sans-serif;
                     margin-top: 0;
                     border-bottom: solid 1px #cccccc57;
                     margin-bottom: 14px;

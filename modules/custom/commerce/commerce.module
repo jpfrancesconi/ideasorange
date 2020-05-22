@@ -51,8 +51,13 @@ function commerce_mail($key, &$message, $params) {
 /** ALTER FORM: GENERIC - BEGIN ************************************/
 function commerce_form_alter(&$form, &$form_state, $form_id) {
   // CASE: CONTACT FORM  ************************************************
-  if ($form_id == 'contact-message-feedback-form') {
-
+  if ($form_id == 'contact_message_feedback_form') {
+    add_placeholders($form);
+    //Add placeholder to component
+    $form['name']['#attributes']['placeholder'] = t('Name (REQUIRED)');
+    $form['mail']['#attributes']['placeholder'] = t('Mail (REQUIRED)');
+    
+    $form['actions']['submit']['#value'] = t('SEND');
   }
 
   /*if($form_id == 'node_orden_de_pago_edit_form') {
@@ -69,5 +74,16 @@ function commerce_form_alter(&$form, &$form_state, $form_id) {
 
   }*/
 
+}
+/**
+ * Add placeholders to suitable form elements -> textfield, password, email, textarea
+ */
+function add_placeholders(&$element) {
+  if(isset($element['#type']) && in_array($element['#type'], ['textfield', 'password', 'email', 'textarea'])) {
+    $element['#attributes']['placeholder'] = $element['#title'].' (REQUIRED)';
+  }
+  foreach(\Drupal\Core\Render\Element::children($element) as $key) {
+    add_placeholders($element[$key]);
+  }
 }
 /** ALTER FORM: GENERIC - BEGIN ************************************/
