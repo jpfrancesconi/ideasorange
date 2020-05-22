@@ -1,4 +1,10 @@
 .highlighted {
+    @media only screen and (max-width: 780px) {
+        height: 100vh;
+    }
+    .layout-container {
+        max-width: 100%;
+    }
     .layout-container.section.clearfix {
         margin-left: 0;
         margin-right: 0;
@@ -7,22 +13,34 @@
 
     .region.region-highlighted {
         margin: 0 auto;
-        width: 100vw;
+        width: 100%;
     }
 
     .content {
         margin-top: 0;
         position: relative;
-
+        & img {
+            @media only screen and (max-width: 780px) {
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
         .container_hero_banner {
             position: absolute;
             right: 10%;
             bottom: 40%;
             color: $orange-color;
+            @media only screen and (max-width: 780px) {
+                right: 20%;
+                bottom: 15%;
+            }
             & h1{
                 color: $orange-color;
                 font-size: 50px;
                 margin-bottom: 0;
+                @media only screen and (max-width: 780px) {
+                    font-size: 28px;
+	            }
             }
             & a{
                 font-size: 32px;

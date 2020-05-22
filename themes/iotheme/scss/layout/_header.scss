@@ -18,6 +18,7 @@
 
         #block-burguermenubutton {
             margin: 0;
+            padding-bottom: 25px;
         }
         .burger {
             display: inline-block;
@@ -25,7 +26,9 @@
             right: 50px;
             cursor: pointer;
             z-index: 999;
-
+            @media only screen and (max-width: 780px) {
+                right: 20px;
+            }
             & div {
                 background-color: $orange-color;
                 width: 25px;
@@ -57,14 +60,27 @@
             &.open {
                 display: flex;
             }
+            @media only screen and (max-width: 780px) {
+		        position: fixed;
+                right: 0;
+                height: 100vh;
+                top: 0;
+                bottom: 0;
+                background-color: rgb(255, 255, 255);
+                justify-content: center;
+                flex-direction: column;
+                width: 50vw;
+	        }
             .clearfix.menu {
                 display: flex;
                 justify-content: space-between;
                 align-content: center;
                 align-items: center;
-
+                @media only screen and (max-width: 780px) {
+                    flex-direction: column;
+                }
                 .menu-item {
-                    border: none; 
+                    border: none;
                     padding: 10px;
                     background-color: rgba($color: #fff, $alpha: 0.59);
                     &:first-child{
@@ -86,7 +102,9 @@
 
     /* Hide brand logo */
     #block-iotheme-branding {
-        display: block;
+        display: flex;
+        align-content: center;
+        align-items: center;
 
         .site-branding__logo img {
             width: 80px;
@@ -102,5 +120,5 @@
         }
     }
 
-    
+
 }
