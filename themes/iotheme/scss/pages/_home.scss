@@ -10,15 +10,6 @@ body.path-frontpage {
         position: absolute;
     }
 
-    /*.region.region-content {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: 0.5s all ease-in-out;
-    }
-    .region.region-content.appear {
-        opacity: 1;
-        transform: translateY(0px);
-    }*/
     /* BEGIN - Generic Styles for blocks on front page */
     .views-element-container.block.block-views {
         height: 100vh;
@@ -170,11 +161,76 @@ body.path-frontpage {
         .project-image {
             /*background-color: red;*/
             & img {
-                width: 400px;
-                height: 300px;
+                width: 500px;
+                height: 350px;
             }
         }
     }
     /* END - Case Studies Block */
+    /* BEGIN - Our Skills Block */
+    #block-ourskills {
+        .title{
+            position: relative;
+            font-size: $fp_block_title_font_size;
+            font-weight: $fp_block_title_font_weight;
+            @media only screen and (max-width: 780px) {
+		        font-size: 24px;
+            }
+            .subtitle {
+                font-size: $fp_block_subtitle_font_size;
+                font-weight: $fp_block_subtitle_font_weight;
+                @media only screen and (max-width: 780px) {
+		            font-size: 24px;
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 10%;
+                background-color: $orange-color;
+                height: 4px;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .tool-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+            margin-left: 50px;
+            margin-right: 50px;
+
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.5s all ease-in-out;
+            &.appear {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+            .tool-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                border: 1px solid #ccc;
+
+                & img {
+                    width: 150px;
+                    margin-top: 15px;
+                    margin: 0 auto;
+                }
+                /*.region.region-content {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    transition: 0.5s all ease-in-out;
+                }
+                .region.region-content.appear {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }*/
+            }
+        }
+    }
+    /* END - Our Skills Block */
     /* END - Specific Styles for blocks on front page */
 }

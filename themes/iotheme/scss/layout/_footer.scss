@@ -59,5 +59,13 @@
     }
     .site-footer__bottom {
         background-color: #1b1919;
+        #block-footer {
+            & h2 {
+                display: none; 
+            }
+            .content {
+                text-align: center;
+            }
+        }
     }
 }

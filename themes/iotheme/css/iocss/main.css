@@ -332,6 +332,14 @@ body {
 .site-footer .site-footer__bottom {
   background-color: #1b1919;
 }
+/* line 63, ../../scss/layout/_footer.scss */
+.site-footer .site-footer__bottom #block-footer h2 {
+  display: none;
+}
+/* line 66, ../../scss/layout/_footer.scss */
+.site-footer .site-footer__bottom #block-footer .content {
+  text-align: center;
+}
 
 /*@import 'layout/header';
 @import 'layout/sidebar';
@@ -384,15 +392,6 @@ body.user-logged-in .header {
 body.path-frontpage {
   background-color: #fff;
   color: #000;
-  /*.region.region-content {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: 0.5s all ease-in-out;
-  }
-  .region.region-content.appear {
-      opacity: 1;
-      transform: translateY(0px);
-  }*/
   /* BEGIN - Generic Styles for blocks on front page */
   /* END - Generic Styles for blocks on front page */
   /* BEGIN - Specific Styles for blocks on front page */
@@ -402,51 +401,53 @@ body.path-frontpage {
   /* END - Partnerts Block */
   /* BEGIN - Case Studies Block */
   /* END - Case Studies Block */
+  /* BEGIN - Our Skills Block */
+  /* END - Our Skills Block */
   /* END - Specific Styles for blocks on front page */
 }
 /* line 9, ../../scss/pages/_home.scss */
 body.path-frontpage .header {
   position: absolute;
 }
-/* line 23, ../../scss/pages/_home.scss */
+/* line 14, ../../scss/pages/_home.scss */
 body.path-frontpage .views-element-container.block.block-views {
   height: 100vh;
   background-color: transparent;
 }
-/* line 26, ../../scss/pages/_home.scss */
+/* line 17, ../../scss/pages/_home.scss */
 body.path-frontpage .views-element-container.block.block-views .homepage-block {
   padding-top: 25px;
 }
 @media only screen and (max-width: 780px) {
-  /* line 23, ../../scss/pages/_home.scss */
+  /* line 14, ../../scss/pages/_home.scss */
   body.path-frontpage .views-element-container.block.block-views {
     height: 100%;
   }
 }
-/* line 32, ../../scss/pages/_home.scss */
+/* line 23, ../../scss/pages/_home.scss */
 body.path-frontpage .views-element-container.block.block-views .title {
   position: relative;
   font-size: 38px;
   font-weight: 600;
 }
 @media only screen and (max-width: 780px) {
-  /* line 32, ../../scss/pages/_home.scss */
+  /* line 23, ../../scss/pages/_home.scss */
   body.path-frontpage .views-element-container.block.block-views .title {
     font-size: 24px;
   }
 }
-/* line 39, ../../scss/pages/_home.scss */
+/* line 30, ../../scss/pages/_home.scss */
 body.path-frontpage .views-element-container.block.block-views .title .subtitle {
   font-size: 38px;
   font-weight: 100;
 }
 @media only screen and (max-width: 780px) {
-  /* line 39, ../../scss/pages/_home.scss */
+  /* line 30, ../../scss/pages/_home.scss */
   body.path-frontpage .views-element-container.block.block-views .title .subtitle {
     font-size: 24px;
   }
 }
-/* line 46, ../../scss/pages/_home.scss */
+/* line 37, ../../scss/pages/_home.scss */
 body.path-frontpage .views-element-container.block.block-views .title:before {
   content: '';
   position: absolute;
@@ -456,21 +457,21 @@ body.path-frontpage .views-element-container.block.block-views .title:before {
   bottom: 0;
   left: 0;
 }
-/* line 62, ../../scss/pages/_home.scss */
+/* line 53, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-services-block-1 .view-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
 }
 @media only screen and (max-width: 780px) {
-  /* line 62, ../../scss/pages/_home.scss */
+  /* line 53, ../../scss/pages/_home.scss */
   body.path-frontpage #block-views-block-services-block-1 .view-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
-/* line 71, ../../scss/pages/_home.scss */
+/* line 62, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-services-block-1 .view-content .views-row {
   display: flex;
   flex-direction: column;
@@ -480,25 +481,25 @@ body.path-frontpage #block-views-block-services-block-1 .view-content .views-row
   text-align: center;
 }
 @media only screen and (max-width: 780px) {
-  /* line 71, ../../scss/pages/_home.scss */
+  /* line 62, ../../scss/pages/_home.scss */
   body.path-frontpage #block-views-block-services-block-1 .view-content .views-row {
     border: none;
   }
 }
-/* line 81, ../../scss/pages/_home.scss */
+/* line 72, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-services-block-1 .view-content .views-row .views-field.views-field-title {
   font-size: 24px;
 }
-/* line 85, ../../scss/pages/_home.scss */
+/* line 76, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-services-block-1 .view-content .views-row .field-content a {
   border-bottom: none;
   color: #f15c08;
 }
-/* line 89, ../../scss/pages/_home.scss */
+/* line 80, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-services-block-1 .view-content .views-row .field-content p {
   color: #695f59;
 }
-/* line 100, ../../scss/pages/_home.scss */
+/* line 91, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-partners-block-1 .view-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -507,14 +508,14 @@ body.path-frontpage #block-views-block-partners-block-1 .view-content {
   margin: 0 auto;
 }
 @media only screen and (max-width: 780px) {
-  /* line 100, ../../scss/pages/_home.scss */
+  /* line 91, ../../scss/pages/_home.scss */
   body.path-frontpage #block-views-block-partners-block-1 .view-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
-/* line 111, ../../scss/pages/_home.scss */
+/* line 102, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-partners-block-1 .view-content .views-row {
   width: 200px;
   height: 200px;
@@ -528,26 +529,26 @@ body.path-frontpage #block-views-block-partners-block-1 .view-content .views-row
   transition: all 0.5s ease;
 }
 @media only screen and (max-width: 780px) {
-  /* line 111, ../../scss/pages/_home.scss */
+  /* line 102, ../../scss/pages/_home.scss */
   body.path-frontpage #block-views-block-partners-block-1 .view-content .views-row {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-/* line 126, ../../scss/pages/_home.scss */
+/* line 117, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-partners-block-1 .view-content .views-row:hover {
   cursor: pointer;
   transform: scale(0.8);
 }
-/* line 130, ../../scss/pages/_home.scss */
+/* line 121, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-partners-block-1 .view-content .views-row a {
   border-bottom: none;
 }
-/* line 141, ../../scss/pages/_home.scss */
+/* line 132, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-case-studies-slide-block-1 .view-content {
   margin-top: 100px;
 }
-/* line 144, ../../scss/pages/_home.scss */
+/* line 135, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-case-studies-slide-block-1 .views-row {
   /*display: flex;
   justify-content: center;*/
@@ -562,31 +563,103 @@ body.path-frontpage #block-views-block-case-studies-slide-block-1 .views-row {
   text-justify: inter-word;
 }
 @media only screen and (max-width: 780px) {
-  /* line 144, ../../scss/pages/_home.scss */
+  /* line 135, ../../scss/pages/_home.scss */
   body.path-frontpage #block-views-block-case-studies-slide-block-1 .views-row {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
-/* line 162, ../../scss/pages/_home.scss */
+/* line 153, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-case-studies-slide-block-1 .project-details {
   padding-left: 15px;
 }
-/* line 164, ../../scss/pages/_home.scss */
+/* line 155, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-case-studies-slide-block-1 .project-details .views-field.views-field-title a {
   color: black;
   border-bottom: none;
   font-size: 42px;
 }
-/* line 170, ../../scss/pages/_home.scss */
+/* line 161, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-case-studies-slide-block-1 .project-image {
   /*background-color: red;*/
 }
-/* line 172, ../../scss/pages/_home.scss */
+/* line 163, ../../scss/pages/_home.scss */
 body.path-frontpage #block-views-block-case-studies-slide-block-1 .project-image img {
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 350px;
+}
+/* line 172, ../../scss/pages/_home.scss */
+body.path-frontpage #block-ourskills .title {
+  position: relative;
+  font-size: 38px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 780px) {
+  /* line 172, ../../scss/pages/_home.scss */
+  body.path-frontpage #block-ourskills .title {
+    font-size: 24px;
+  }
+}
+/* line 179, ../../scss/pages/_home.scss */
+body.path-frontpage #block-ourskills .title .subtitle {
+  font-size: 38px;
+  font-weight: 100;
+}
+@media only screen and (max-width: 780px) {
+  /* line 179, ../../scss/pages/_home.scss */
+  body.path-frontpage #block-ourskills .title .subtitle {
+    font-size: 24px;
+  }
+}
+/* line 186, ../../scss/pages/_home.scss */
+body.path-frontpage #block-ourskills .title:before {
+  content: '';
+  position: absolute;
+  width: 10%;
+  background-color: #f15c08;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+}
+/* line 196, ../../scss/pages/_home.scss */
+body.path-frontpage #block-ourskills .tool-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+/* line 206, ../../scss/pages/_home.scss */
+body.path-frontpage #block-ourskills .tool-container.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+/* line 210, ../../scss/pages/_home.scss */
+body.path-frontpage #block-ourskills .tool-container .tool-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  /*.region.region-content {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: 0.5s all ease-in-out;
+  }
+  .region.region-content.appear {
+      opacity: 1;
+      transform: translateY(0px);
+  }*/
+}
+/* line 217, ../../scss/pages/_home.scss */
+body.path-frontpage #block-ourskills .tool-container .tool-card img {
+  width: 150px;
+  margin-top: 15px;
+  margin: 0 auto;
 }
 
 /* line 2, ../../scss/pages/_cursos.scss */

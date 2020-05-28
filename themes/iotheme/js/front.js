@@ -40,7 +40,8 @@
     /* Appearing text */
     function scrollAppearing(){
         // Get element
-        var block1 = document.querySelector('#block-views-block-partners-block-1 .view-content');
+        var block1 = document.querySelector('.tool-container');
+        console.log(block1);
         // Get his current position
         var block1Position = block1.getBoundingClientRect().top;
         // Get current top windows position
