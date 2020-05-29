@@ -383,6 +383,36 @@ body {
   display: none;
 }
 
+/* line 2, ../../scss/pages/_login.scss */
+body.layout-no-sidebars.path-user .header {
+  position: static;
+}
+/* line 10, ../../scss/pages/_login.scss */
+body.layout-no-sidebars.path-user .layout-main-wrapper.layout-container.clearfix .layout-main.clearfix .section .region.region-content {
+  margin: 0 auto;
+  width: 400px;
+}
+/* line 15, ../../scss/pages/_login.scss */
+body.layout-no-sidebars.path-user .layout-main-wrapper.layout-container.clearfix .layout-main.clearfix .section .region.region-content .block.block-system.block-system-main-block .content {
+  margin-top: 0;
+}
+/* line 17, ../../scss/pages/_login.scss */
+body.layout-no-sidebars.path-user .layout-main-wrapper.layout-container.clearfix .layout-main.clearfix .section .region.region-content .block.block-system.block-system-main-block .content .user-login-form {
+  border: solid 1px #ccc;
+  padding: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 25, ../../scss/pages/_login.scss */
+body.layout-no-sidebars.path-user .layout-main-wrapper.layout-container.clearfix .layout-main.clearfix .section .region.region-content .block.block-system.block-system-main-block .content .user-login-form .button.js-form-submit.form-submit {
+  background: transparent;
+  width: 100%;
+  border-radius: 0;
+  padding: 10px;
+  border: solid 1px #000;
+}
+
 /* line 2, ../../scss/pages/_home.scss */
 body.user-logged-in .header {
   display: none;

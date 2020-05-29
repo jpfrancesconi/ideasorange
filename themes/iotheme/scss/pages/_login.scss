@@ -1,0 +1,39 @@
+body.layout-no-sidebars.path-user {
+    .header {
+        position: static;
+    }
+
+    .layout-main-wrapper.layout-container.clearfix{
+        .layout-main.clearfix {
+          .section {
+            //Center login interface
+            .region.region-content {
+              margin: 0 auto;
+              width: 400px;
+    
+              .block.block-system.block-system-main-block {
+                .content {
+                  margin-top: 0;
+                  .user-login-form {
+                    border: solid 1px #ccc;
+                    padding: 20px;
+                    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+                    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    
+                    //Button submit
+                    .button.js-form-submit.form-submit {
+                      background: transparent;
+                      width: 100%;
+                      border-radius: 0;
+                      padding: 10px;
+                      border: solid 1px #000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+}
